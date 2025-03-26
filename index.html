@@ -171,8 +171,13 @@ body {
         <h1 class="cover-heading">Manage your digital resources</h1>
         <p class="lead">stackboard helps you organize and manage what matters<br> <br><strong> Sign-ups starting soon...</strong></p>
         <p class="lead">
-          <a href="https://start.stackboard.one/invite" class="btn btn-lg btn-secondary"> Get started</a>
-          <button class="btn btn-lg btn-outline-secondary" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i> Play demo</button>
+      
+
+          
+          <a href="https://start.stackboard.one/invite" class="btn btn-secondary btn-md d-md-none"> Get started</a>
+          <a href="https://start.stackboard.one/invite" class="btn btn-secondary btn-lg d-none d-md-inline-block"> Get started</a>
+          <button class="btn btn-outline-secondary btn-md d-md-none" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i> Play demo</button>
+          <button class="btn btn-outline-secondary btn-lg d-none d-md-inline-block" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i> Watch demo</button>
           
           
           <br>
@@ -213,12 +218,12 @@ body {
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     
-       <a href="#" class="btn btn-lg btn-secondary">x</a>
-      
+      <button type="button" class="btn btn-dark" data-dismiss="modal">X</button>
+      <div class="modal-content ">
       <div class="modal-body">
         <!-- YouTube Player Container -->
         <div id="youtubePlayer"></div>
-        
+      </div>
   </div>
     
   </div>
