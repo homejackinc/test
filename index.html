@@ -2,14 +2,35 @@
 <!doctype html>
 <html lang="en">
   <head>
+     <!-- Primary Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://www.shareicon.net/download/2016/11/14/851902_th.svg">
-    <meta name="trustpilot-one-time-domain-verification-id" content="fb0eadf3-8ee9-4fe0-8cab-28bc7e574fca"/>
-
-    <title>stackboard app</title>
+    <meta name="description" content="stackboard | Advanced workflow tool">
+    <meta name="keywords" content="bookmarking tool, save websites, online bookmarks, bookmark manager, organize bookmarks, sync bookmarks, web favorites">
+    
+   
+    
+ <title>stackbaord | organize what matters</title>
+	
+	<link rel="canonical" href="https://stackboard.one/" />
+	
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="stackboard | organize what matters" />
+	<meta property="og:description" content="stackboard | stackboard is the best bookmarking tool to save, organize, and access your favorite websites from anywhere." />
+	<meta property="og:url" content="https://stackboard.one/" />
+	<meta property="og:site_name" content="stackboard" />
+	<meta property="og:image" content="https://pbs.twimg.com/media/GoJWWqsXIAA28rQ?format=jpg&name=small" />
+	<meta content="summary_large_image" name="twitter:card" /><meta content="@ycombinator" name="twitter:site" /><meta content="https://pbs.twimg.com/media/GoJWWqsXIAA28rQ?format=jpg&name=small" name="twitter:image" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Font_Awesome_5_solid_th-large.svg/2048px-Font_Awesome_5_solid_th-large.svg.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Font_Awesome_5_solid_th-large.svg/2048px-Font_Awesome_5_solid_th-large.svg.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Font_Awesome_5_solid_th-large.svg/2048px-Font_Awesome_5_solid_th-large.svg.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Font_Awesome_5_solid_th-large.svg/2048px-Font_Awesome_5_solid_th-large.svg.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
      <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
@@ -19,33 +40,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-    .modal,  .modal-header, .modal-footer{
-      background-color: #2f2f2f;
-      }
-      .modal-body{
-        background-color: black;
-      }
-    
-   
-    #youtubePlayer {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-    }
-
-   
-    #youtubePlayer iframe {
-      width: 100%;
-      height: 100%;
-    }
-        iframe { 
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
-    .modal-body{
-      margin-bottom: 0;
-      padding: 0;
-    }    
-  
       
      /*
  * Globals
@@ -144,7 +138,11 @@ body {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
-
+.container-2{
+  background: black;
+  color: grey;
+  border-radius: 25px;
+  margin:50px;      }
 
 /*
  * Footer
@@ -152,9 +150,6 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 } 
-      
-      
-
     </style>
   </head>
 
@@ -163,32 +158,71 @@ body {
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand text-left"><i class="fas fa-th-large"></i>  stackboard</h3>
-          
+          <h3 class="masthead-brand text-left"><i class="fas fa-th"></i>  stackboard</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Turn Chaos into Clarity</h1>
-        <p class="lead"> Apps, links, images, files, video, notes, projects and more. <br>
-          Stackboard helps keep everything that matters at your fingertips.<br> <br></p>
+        <h1 class="cover-heading">Manage your digital tools</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. <br>Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
         <p class="lead">
-      
-
-          
-          <a href="https://start.stackboard.one/invite" class="btn btn-secondary btn-md d-md-none"> Get started</a>
-          <a href="https://start.stackboard.one/invite" class="btn btn-secondary btn-lg d-none d-md-inline-block"> Get started</a>
-          <button class="btn btn-outline-secondary btn-md d-md-none" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i> Play demo</button>
-          <button class="btn btn-outline-secondary btn-lg d-none d-md-inline-block" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i> Watch demo</button>
-          
-          
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
           <br>
           <br>
-         
+          <small><a href="#">(I have an invite code)</a></small>
         </p>
       </main>
     
-                   
+        <div class="container-2">
+        <section>
+  <h1>What is Stackboard?</h1>
+  <p><strong>Stackboard</strong> is an innovative productivity and workflow platform that lets you organize your digital tools, links, and resources using a visual, stack-based system. Whether you're a developer, marketer, creator, or business owner, Stackboard gives you a faster, smarter way to manage your work.</p>
+
+  <h2>🧱 Stack + Card + Button: A Smarter Structure</h2>
+  <p>Stackboard is built around a simple but powerful hierarchy:</p>
+  <ul>
+    <li><strong>Stacks</strong> – represent categories, projects, or workflows (e.g., Marketing, Dev Tools, AI).</li>
+    <li><strong>Cards</strong> – live inside stacks and represent tools or platforms (like GitHub, Notion, YouTube, ChatGPT).</li>
+    <li><strong>Buttons</strong> – customizable links added to cards that launch specific resources, dashboards, or pages.</li>
+  </ul>
+  <p>This design makes Stackboard incredibly flexible—perfect for organizing everything from daily workflows to complex project ecosystems.</p>
+
+  <h2>🚀 Stackboard Features at a Glance</h2>
+  <ul>
+    <li><strong>🔗 Link-Centric Organization</strong> – Save, group, and launch links with precision</li>
+    <li><strong>🪟 Smart Window Controls</strong> – Choose how links open: new tab, custom-sized window, auto-close, or refocus</li>
+    <li><strong>⌨️ Global Shortcuts</strong> – Open stacks, cards, or links instantly via keyboard</li>
+    <li><strong>📌 Sidebar & Pinning</strong> – Pin key buttons for persistent access in your sidebar</li>
+    <li><strong>🧠 Built-in AI</strong> – Get intelligent task suggestions or auto-generate content</li>
+    <li><strong>🧰 Micro Apps</strong> – Time tracking, code editors, crypto tickers, news widgets, and more</li>
+    <li><strong>✅ Project Management</strong> – Built-in task and subtask tracking with resource linking</li>
+    <li><strong>🔌 Connected Apps</strong> – Facebook, YouTube, Google My Business, and others</li>
+  </ul>
+
+  <h2>🎯 Why Choose Stackboard?</h2>
+  <p>While tools like Notion, Trello, and Asana focus on documents or task lists, Stackboard is built for doing real work. It's the perfect hub for launching tools, managing active projects, tracking resources, and staying focused—all from one clean interface.</p>
+
+  <p>Use it to:</p>
+  <ul>
+    <li>Launch all your tools with one shortcut</li>
+    <li>Keep dozens of links organized and accessible</li>
+    <li>Track tasks, deadlines, and project components</li>
+    <li>Streamline creative workflows with integrated micro apps</li>
+  </ul>
+
+  <h2>📚 Stackboard vs others</h2>
+  <p>If you're searching for a way to organize your digital tools, you're in the right place. This is the platform redefining digital productivity—one stack at a time.</p>
+
+  <h2>👉 Get Started with Stackboard</h2>
+  <p><a href="https://stackboard.one" target="_blank" rel="noopener">Visit stackboard.one</a> to create your first stack today and experience the future of workflow management.</p>
+</section>
+  
+      </div>
                    
               
   
@@ -201,101 +235,25 @@ body {
          
                    
                    
-          <a href="https://github.com/stackboardapp" data-toggle="tooltip" title="github"><i class="fab fa-github fa-xl"></i></a>
-     <a href="https://discord.gg/vhMErsaW" data-toggle="tooltip" title="discord"><i class="fa-brands fa-discord fa-xl"></i></a>
-  <a href="https://x.com/stackboardapp" data-toggle="tooltip" title="x.com"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
-  <a href="https://www.youtube.com/@stackboard" data-toggle="tooltip" title="youtube"><i class="fa-brands fa-youtube fa-xl"></i></a>
-  <a href="https://www.reddit.com/r/stackboard/" data-toggle="tooltip" title="reddit"><i class="fa-brands fa-reddit-alien fa-xl"></i></a>
+                    <i class="fab fa-github fa-xl"></i>
+     <i class="fa-brands fa-discord fa-xl"></i>
+  <i class="fa-brands fa-x-twitter fa-xl"></i>
+  <i class="fa-brands fa-youtube fa-xl"></i>
+  <i class="fa-brands fa-reddit-alien fa-xl"></i>
  
   
-          <p style="margin-top: 25px;">stackboard technologies, a dymond company</p>
+          <p style="margin-top: 25px;">stackboard technologies</p>
         </div>
       </footer>
     </div>
-    
-    
-    
-    
-   <!-- Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    
-      <button type="button" class="btn btn-dark" data-dismiss="modal">X</button>
-      <div class="modal-content ">
-      <div class="modal-body">
-        <!-- YouTube Player Container -->
-        <div id="youtubePlayer"></div>
-      </div>
-  </div>
-    
-  </div>
-    
-    
-    
-    
-    
-    
-    
 
 
-  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-  
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script src="https://www.youtube.com/iframe_api"></script>
-<script>
-  // Global variable to hold the YouTube player instance
-  var youtubePlayer;
-
-  
-  function onYouTubeIframeAPIReady() {
-    youtubePlayer = new YT.Player('youtubePlayer', {
-      height: 'auto', 
-      width: '100%', 
-      videoId: 'vfPle7DwMoU?si=nl1Ow9DgbUTHIBz6', 
-   playerVars: {
-      autoplay: 1, 
-      rel: 0, 
-      modestbranding: 1, 
-      vq: 'hd1080' 
-    },
-    events: {
-      'onReady': onPlayerReady
-    }
-  });
-}
-
-  
-  function onPlayerReady(event) {
-    console.log('YouTube player is ready');
-  }
-
-  // When the modal is closed, stop the video
-  $('#videoModal').on('hidden.bs.modal', function () {
-    if (youtubePlayer && youtubePlayer.stopVideo) {
-      youtubePlayer.stopVideo(); // Stop the video
-    }
-  });
-
-  
-  $('#videoModal').on('show.bs.modal', function () {
-    if (youtubePlayer && youtubePlayer.playVideo) {
-      youtubePlayer.playVideo(); // Start the video
-    }
-  });
-</script>
-  <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
-  
-  
   </body>
 </html>
