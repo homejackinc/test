@@ -1,7 +1,6 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
+ <head>
      <!-- Primary Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +9,7 @@
     
    
     
- <title>stackbaord | organize what matters</title>
+ <title>stackboard | organize what matters</title>
 	
 	<link rel="canonical" href="https://stackboard.one/" />
 	
@@ -31,8 +30,9 @@
     <link rel="mask-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Font_Awesome_5_solid_th-large.svg/2048px-Font_Awesome_5_solid_th-large.svg.png" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-     <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>stackboard app</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
 
@@ -40,6 +40,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+    .modal,  .modal-header, .modal-footer{
+      background-color: #2f2f2f;
+      }
+      .modal-body{
+        background-color: black;
+      }
+    
+   
+    #youtubePlayer {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+
+   
+    #youtubePlayer iframe {
+      width: 100%;
+      height: 100%;
+    }
+        iframe { 
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+    .modal-body{
+      margin-bottom: 0;
+      padding: 0;
+    }    
+  
       
      /*
  * Globals
@@ -73,7 +100,7 @@ body {
   background-color: #333;
 }
 body {
-  
+ 
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
@@ -81,6 +108,7 @@ body {
 
 .cover-container {
   max-width: 82em;
+  
 }
 
 
@@ -133,6 +161,8 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
+  margin-top: 200px;
+ 
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -142,7 +172,8 @@ body {
   background: black;
   color: grey;
   border-radius: 25px;
-  margin:50px;      }
+  margin-top:100px;
+      margin-bottom:100px;}
 
 /*
  * Footer
@@ -150,12 +181,15 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 } 
+      
+      
+
     </style>
   </head>
 
   <body class="text-center">
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand text-left"><i class="fas fa-th"></i>  stackboard</h3>
@@ -168,17 +202,26 @@ body {
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Manage your digital tools</h1>
-        <p class="lead"> Manage what matters</p>
+        <h1 class="cover-heading">Turn Chaos into Clarity</h1>
+        <p class="lead"> Apps, links, images, files, video, notes, projects and more. <br>
+          Stackboard helps keep everything that matters at your fingertips.<br> <br></p>
         <p class="lead">
-          <a href="https://start.stackboard.one/join" class="btn btn-lg btn-secondary">Get started</a>
+      
+
+          
+          <a href="https://start.stackboard.one/invite" class="btn btn-secondary btn-md d-md-none"> Get started</a>
+          <a href="https://start.stackboard.one/invite" class="btn btn-secondary btn-lg d-none d-md-inline-block"> Get started</a>
+          <button class="btn btn-outline-secondary btn-md d-md-none" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i> Play demo</button>
+          <button class="btn btn-outline-secondary btn-lg d-none d-md-inline-block" data-toggle="modal" data-target="#videoModal"><i class="fas fa-play"></i> Watch demo</button>
+          
+          
           <br>
           <br>
-          <small><a href="https://start.stackboard.one/invite">(I have an invite code)</a></small>
+         
         </p>
       </main>
-    
-        <div class="container-2">
+   
+         <div class="container-2">
         <section>
   <h1>What is Stackboard?</h1>
   <p><strong>Stackboard</strong> is an innovative productivity and workflow platform that lets you organize your digital tools, links, and resources using a visual, stack-based system. Whether you're a developer, marketer, creator, or business owner, Stackboard gives you a faster, smarter way to manage your work.</p>
@@ -222,7 +265,7 @@ body {
   <p><a href="https://stackboard.one" target="_blank" rel="noopener">Visit stackboard.one</a> to create your first stack today and experience the future of workflow management.</p>
 </section>
   
-      </div>
+      </div>            
                    
               
   
@@ -235,25 +278,101 @@ body {
          
                    
                    
-                    <i class="fab fa-github fa-xl"></i>
-     <i class="fa-brands fa-discord fa-xl"></i>
-  <i class="fa-brands fa-x-twitter fa-xl"></i>
-  <i class="fa-brands fa-youtube fa-xl"></i>
-  <i class="fa-brands fa-reddit-alien fa-xl"></i>
+          <a href="https://github.com/stackboardapp" data-toggle="tooltip" title="github"><i class="fab fa-github fa-xl"></i></a>
+     <a href="https://discord.gg/vhMErsaW" data-toggle="tooltip" title="discord"><i class="fa-brands fa-discord fa-xl"></i></a>
+  <a href="https://x.com/stackboardapp" data-toggle="tooltip" title="x.com"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+  <a href="https://www.youtube.com/@stackboard" data-toggle="tooltip" title="youtube"><i class="fa-brands fa-youtube fa-xl"></i></a>
+  <a href="https://www.reddit.com/r/stackboard/" data-toggle="tooltip" title="reddit"><i class="fa-brands fa-reddit-alien fa-xl"></i></a>
  
   
-          <p style="margin-top: 25px;">stackboard technologies</p>
+          <p style="margin-top: 25px;">stackboard technologies, a dymond company</p>
         </div>
       </footer>
     </div>
+    
+    
+    
+    
+   <!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    
+      <button type="button" class="btn btn-dark" data-dismiss="modal">X</button>
+      <div class="modal-content ">
+      <div class="modal-body">
+        <!-- YouTube Player Container -->
+        <div id="youtubePlayer"></div>
+      </div>
+  </div>
+    
+  </div>
+    
+    
+    
+    
+    
+    
+    
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://web.archive.org/web/20250410035321js_/https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+  
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  // Global variable to hold the YouTube player instance
+  var youtubePlayer;
+
+  
+  function onYouTubeIframeAPIReady() {
+    youtubePlayer = new YT.Player('youtubePlayer', {
+      height: 'auto', 
+      width: '100%', 
+      videoId: 'vfPle7DwMoU?si=nl1Ow9DgbUTHIBz6', 
+   playerVars: {
+      autoplay: 1, 
+      rel: 0, 
+      modestbranding: 1, 
+      vq: 'hd1080' 
+    },
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+  
+  function onPlayerReady(event) {
+    console.log('YouTube player is ready');
+  }
+
+  // When the modal is closed, stop the video
+  $('#videoModal').on('hidden.bs.modal', function () {
+    if (youtubePlayer && youtubePlayer.stopVideo) {
+      youtubePlayer.stopVideo(); // Stop the video
+    }
+  });
+
+  
+  $('#videoModal').on('show.bs.modal', function () {
+    if (youtubePlayer && youtubePlayer.playVideo) {
+      youtubePlayer.playVideo(); // Start the video
+    }
+  });
+</script>
+  <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+  
+  
   </body>
 </html>
