@@ -1,7 +1,8 @@
+
 <!doctype html>
 <html lang="en">
  <head>
-     <!-- Primary Meta Tags -->
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="stackboard | Advanced workflow tool">
@@ -223,51 +224,7 @@ body {
         </p>
       </main>
    
-         <div class="container-2">
-        <section>
-  <h1>What is Stackboard?</h1>
-  <p><strong>Stackboard</strong> is an innovative productivity and workflow platform that lets you organize your digital tools, links, and resources using a visual, stack-based system. Whether you're a developer, marketer, creator, or business owner, Stackboard gives you a faster, smarter way to manage your work.</p>
-
-  <h2>🧱 Stack + Card + Button: A Smarter Structure</h2>
-  <p>Stackboard is built around a simple but powerful hierarchy:</p>
-  <ul>
-    <li><strong>Stacks</strong> – represent categories, projects, or workflows (e.g., Marketing, Dev Tools, AI).</li>
-    <li><strong>Cards</strong> – live inside stacks and represent tools or platforms (like GitHub, Notion, YouTube, ChatGPT).</li>
-    <li><strong>Buttons</strong> – customizable links added to cards that launch specific resources, dashboards, or pages.</li>
-  </ul>
-  <p>This design makes Stackboard incredibly flexible—perfect for organizing everything from daily workflows to complex project ecosystems.</p>
-
-  <h2>🚀 Stackboard Features at a Glance</h2>
-  <ul>
-    <li><strong>🔗 Link-Centric Organization</strong> – Save, group, and launch links with precision</li>
-    <li><strong>🪟 Smart Window Controls</strong> – Choose how links open: new tab, custom-sized window, auto-close, or refocus</li>
-    <li><strong>⌨️ Global Shortcuts</strong> – Open stacks, cards, or links instantly via keyboard</li>
-    <li><strong>📌 Sidebar & Pinning</strong> – Pin key buttons for persistent access in your sidebar</li>
-    <li><strong>🧠 Built-in AI</strong> – Get intelligent task suggestions or auto-generate content</li>
-    <li><strong>🧰 Micro Apps</strong> – Time tracking, code editors, crypto tickers, news widgets, and more</li>
-    <li><strong>✅ Project Management</strong> – Built-in task and subtask tracking with resource linking</li>
-    <li><strong>🔌 Connected Apps</strong> – Facebook, YouTube, Google My Business, and others</li>
-  </ul>
-
-  <h2>🎯 Why Choose Stackboard?</h2>
-  <p>While tools like Notion, Trello, and Asana focus on documents or task lists, Stackboard is built for doing real work. It's the perfect hub for launching tools, managing active projects, tracking resources, and staying focused—all from one clean interface.</p>
-
-  <p>Use it to:</p>
-  <ul>
-    <li>Launch all your tools with one shortcut</li>
-    <li>Keep dozens of links organized and accessible</li>
-    <li>Track tasks, deadlines, and project components</li>
-    <li>Streamline creative workflows with integrated micro apps</li>
-  </ul>
-
-  <h2>📚 Stackboard vs others</h2>
-  <p>If you're searching for a way to organize your digital tools, you're in the right place. This is the platform redefining digital productivity—one stack at a time.</p>
-
-  <h2>👉 Get Started with Stackboard</h2>
-  <p><a href="https://stackboard.one" target="_blank" rel="noopener">Visit stackboard.one</a> to create your first stack today and experience the future of workflow management.</p>
-</section>
-  
-      </div>            
+           
                    
               
   
@@ -321,7 +278,7 @@ body {
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://web.archive.org/web/20250410035321js_/https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+   
   
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
@@ -330,42 +287,47 @@ body {
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
   // Global variable to hold the YouTube player instance
-  var youtubePlayer;
+   var youtubePlayer;
 
-  
   function onYouTubeIframeAPIReady() {
     youtubePlayer = new YT.Player('youtubePlayer', {
-      height: 'auto', 
-      width: '100%', 
-      videoId: 'vfPle7DwMoU?si=nl1Ow9DgbUTHIBz6', 
-   playerVars: {
-      autoplay: 1, 
-      rel: 0, 
-      modestbranding: 1, 
-      vq: 'hd1080' 
-    },
-    events: {
-      'onReady': onPlayerReady
-    }
-  });
-}
+      height: '100%',
+      width: '100%',
+      videoId: 'vfPle7DwMoU', // Remove the ?si parameter
+      playerVars: {
+        autoplay: 0, // Start with 0, play when modal opens
+        rel: 0,
+        modestbranding: 1,
+        playsinline: 1
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
 
-  
   function onPlayerReady(event) {
     console.log('YouTube player is ready');
   }
 
-  // When the modal is closed, stop the video
-  $('#videoModal').on('hidden.bs.modal', function () {
-    if (youtubePlayer && youtubePlayer.stopVideo) {
-      youtubePlayer.stopVideo(); // Stop the video
+  function onPlayerStateChange(event) {
+    // Optional: handle player state changes
+  }
+
+  // Play video when modal opens
+  $('#videoModal').on('shown.bs.modal', function () {
+    if (youtubePlayer && youtubePlayer.playVideo) {
+      setTimeout(function() {
+        youtubePlayer.playVideo();
+      }, 500);
     }
   });
 
-  
-  $('#videoModal').on('show.bs.modal', function () {
-    if (youtubePlayer && youtubePlayer.playVideo) {
-      youtubePlayer.playVideo(); // Start the video
+  // Stop video when modal closes
+  $('#videoModal').on('hidden.bs.modal', function () {
+    if (youtubePlayer && youtubePlayer.stopVideo) {
+      youtubePlayer.stopVideo();
     }
   });
 </script>
